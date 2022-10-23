@@ -1,0 +1,47 @@
+.information {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  &-title {
+    width: 420px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  &-text {
+    width: 400px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+  }
+
+  &__use {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cancel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.player-info {
+  width: 450px;
+  height: 300px;
+}

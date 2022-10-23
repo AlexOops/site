@@ -1,0 +1,73 @@
+.payment {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &__info {
+    width: 300px;
+
+    &__title {
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    &__text {
+      margin: 40px 0 30px 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #95A1BB;
+    }
+
+    &__contact {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6E38F7;
+      text-decoration: none;
+
+      &:active {
+        cursor: pointer;
+        color: #ffff;
+      }
+    }
+  }
+
+  &__plan {
+    width: 300px;
+
+    &__title {
+      margin: 30px 0 10px 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__price {
+      color: #95A1BB;
+      margin-bottom: 20px;
+
+      &--active {
+        color: #6E38F7;
+      }
+    }
+
+    &__text {
+      margin: 30px 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #95A1BB;
+    }
+  }
+}
