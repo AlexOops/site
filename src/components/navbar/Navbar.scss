@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import "../../media_mixin";
+$content-width: 940px;
+*{
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  top: 24px;
+  width:$content-width;
+  margin-left: -($content-width/2); /* Negative half of width. */
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+  padding: 0 5px;
+}
+
+.nav--active {
+  box-shadow: 5px 10px 30px rgba(110, 56, 247, 0.27);
+  background-color: #ffffff;
+}
+
+
+.menu-first-wrap,
+.menu-auth-wrap {
+  display: flex;
+  align-items: center;
+}
+.menu,
+.menu-auth {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0 0 0 10px;
+  .menu-link,
+  .menu-auth-link{
+    text-decoration: none;
+    color: #363940;
+    &:hover{
+      color: rgba(0, 0, 0, 0.8);
+    }
+    &:active{
+      color: rgba(0, 0, 0, 0.5);
+    }
+    @include _1100{
+      width: 100%;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 25px;
+      border: 1px solid rgba(38, 38, 38, 0.03);
+      display: flex;
+    }
+  }
+  .menu-link--active {
+    color: #FF0202;
+  }
+  .menu-item, .menu-auth-item {
+    margin-right: 17px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    text-align: right;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @include  _1100 {
+      width: 100%;
+      display: flex;
+    }
+  }
+  @include _1100 {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #FF0202;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+.menu-btn,
+.menu-auth-btn {
+  display: none;
+}
+.menu-btn {
+  &:checked ~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 15px;
+  }
+  @include _1100 {
+    &:checked ~ .menu{
+      display: block;
+    }
+  }
+  &:checked ~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 15px;
+  }
+}
+
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+.menu-icon{
+  cursor:pointer;
+  //padding:28px 20px;
+
+  position:relative;
+  user-select: none;
+
+  .nav-icon {
+    display:none;
+    width: 36px;
+    height: 36px;
+    background: #6E38F7;
+    border-radius: 50%;
+    position:relative;
+    transition: background 0.2s ease-out;
+    &:before, &:after {
+      background:#fff;
+      content:'';
+      display:block;
+      border-radius: 3px;
+      height:6px;
+      width: 14px;
+      left: 11px;
+      position:absolute;
+      transition:all ease-out 0.2s;
+    }
+    &:before {
+      top:11px;
+    }
+    &:after {
+      top:19px;
+    }
+    @include _1100 {
+      display: block;
+    }
+  }
+}
