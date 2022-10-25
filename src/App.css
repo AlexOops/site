@@ -2,6 +2,9 @@
 @import url(components/header/header.scss);
 @import url(components/information/information.scss);
 @import url(components/payment/payment.scss);
+@import url(components/contacts/contacts.scss);
+@import url(components/questions/questions.scss);
+@import url(components/feedback/feedback.scss);
 .App {
   font-family: "Rubik", sans-serif;
   display: flex;
@@ -33,6 +36,25 @@
 }
 .App .verticalLine {
   border-bottom: solid 1px #E1E5EE;
+}
+.App a {
+  text-decoration: none;
+}
+.App ::-webkit-input-placeholder {
+  color: #CAD1E1;
+  padding-left: 20px;
+}
+.App input {
+  padding: 0;
+}
+.App input:focus {
+  outline: none;
+  border: 1px solid #6E38F7;
+  color: #6E38F7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=App.css.map */
