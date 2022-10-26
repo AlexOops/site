@@ -5,11 +5,14 @@
 @import url(components/contacts/contacts.scss);
 @import url(components/questions/questions.scss);
 @import url(components/feedback/feedback.scss);
+@import url(components/navbar/Navbar.scss);
+
 
 .App {
   font-family: 'Rubik', sans-serif;
   display: flex;
   justify-content: center;
+  margin-top: 54px;
 
   .button {
     box-sizing: border-box;
