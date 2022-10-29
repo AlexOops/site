@@ -1,0 +1,63 @@
+.forms {
+  margin-top: 120px;
+  display: flex;
+
+  &__context {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+
+    &__title {
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &__list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 130px;
+      padding: 0;
+      margin-top: 35px;
+    }
+
+    &__item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__link {
+      color: #95A1BB;
+
+      &:hover {
+        color: #6E38F7;
+      }
+    }
+  }
+
+  &__docs {
+    padding: 0;
+    margin: 0;
+    width: 700px;
+    height: 380px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    &__item {
+      transition: 1s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

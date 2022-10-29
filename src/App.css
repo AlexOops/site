@@ -5,10 +5,14 @@
 @import url(components/contacts/contacts.scss);
 @import url(components/questions/questions.scss);
 @import url(components/feedback/feedback.scss);
+@import url(components/navbar/Navbar.scss);
+/*forms page*/
+@import url(components/forms/forms.scss);
 .App {
   font-family: "Rubik", sans-serif;
   display: flex;
   justify-content: center;
+  margin-top: 54px;
 }
 .App .button {
   box-sizing: border-box;
