@@ -23,14 +23,10 @@ const Navbar = () => {
                     <span className='nav-icon'></span>
                 </label>
                 <ul className='menu'>
-                    <li className={'menu-item'}><Link to={"#"} className={'menu-link menu-link--active'}>Обо мне</Link></li>
-                    <li className={'menu-item'}><Link to={"#"}  className={'menu-link'}>Контакты</Link></li>
-<<<<<<< HEAD
-                    <li className={'menu-item'}><Link to={"#"}  className={'menu-link'}>Бланки</Link></li>
-=======
-                    <li className={'menu-item'}><Link to={"/forms"}  className={'menu-link'}>Бланки</Link></li>
->>>>>>> 4182924 (added component form)
-                    <li className={'menu-item'}><Link to={"#"}  className={'menu-link'}>Протоколы</Link></li>
+                    <li className='menu__item'><Link to={"#"} className='menu__link menu__link--active'>Обо мне</Link></li>
+                    <li className='menu__item'><Link to={"#"} className='menu__link'>Контакты</Link></li>
+                    <li className='menu__item'><Link to={"/forms"} className='menu__link'>Бланки</Link></li>
+                    <li className='menu__item'><Link to={"#"} className='menu__link'>Протоколы</Link></li>
                 </ul>
             </div>
             <div className="social">

@@ -37,7 +37,7 @@ nav {
   padding: 0;
   display: flex;
   margin: 0 0 0 10px;
-  .menu-link,
+  .menu__link,
   .menu-auth-link{
     text-decoration: none;
     color: #363940;
@@ -58,10 +58,10 @@ nav {
       display: flex;
     }
   }
-  .menu-link--active {
+  .menu__link--active {
     color: #FF0202;
   }
-  .menu-item, .menu-auth-item {
+  .menu__item, .menu-auth-item {
     margin-right: 17px;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
