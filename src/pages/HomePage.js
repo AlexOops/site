@@ -10,7 +10,6 @@ import Feedback from "../components/feedback/Feedback";
 const HomePage = () => {
     return (
         <div className="home-page">
-            <Navbar/>
             <Header/>
             <Information/>
             <Payment/>

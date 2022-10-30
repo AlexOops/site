@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import * as svg from "../../images/svg_icons";
+import {NavHashLink} from "react-router-hash-link";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -26,7 +27,10 @@ const Navbar = () => {
                     <li className='menu__item'><Link to={"#"} className='menu__link menu__link--active'>Обо мне</Link></li>
                     <li className='menu__item'><Link to={"#"} className='menu__link'>Контакты</Link></li>
                     <li className='menu__item'><Link to={"/forms"} className='menu__link'>Бланки</Link></li>
-                    <li className='menu__item'><Link to={"#"} className='menu__link'>Протоколы</Link></li>
+                    <li className='menu__item'><NavHashLink
+                        to={"/#paymentAnchorTag"} className='menu__link'
+                        scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                    >Протоколы</NavHashLink></li>
                 </ul>
             </div>
             <div className="social">

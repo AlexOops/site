@@ -2,7 +2,7 @@ import React from 'react';
 
 const Payment = () => {
     return (
-        <div className="payment">
+        <div className="payment" id="paymentAnchorTag">
             <div className="payment__info">
                 <h1 className="payment__info__title">Выбрать план</h1>
                 <p className="payment__info__text">There are many reasons to get down and start to get depressed about
