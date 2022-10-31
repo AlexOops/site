@@ -1,15 +1,24 @@
 import React from 'react';
 import ResponsivePlayer from "../video/ResponsivePlayer";
+import {NavHashLink} from "react-router-hash-link";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
         <div className="header">
             <h2 className="header__tittle">Антипротокол</h2>
-            <div className="header__btn-wrp">
-                <button className="header__btn-buy button">Купить сейчас</button>
-                <button className="header__btn-content button">Бесплатный контент</button>
-            </div>
+
             <ResponsivePlayer className={"player-header"} url="https://www.youtube.com/embed/D4MdHQOILdw"/>
+
+            <div className="header__btn-wrp">
+                <NavHashLink
+                    to={"/#paymentAnchorTag"} className='button'
+                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                >Купить сейчас</NavHashLink>
+                <Link to={"/forms"}>
+                    <button className="button">Бесплатный контент</button>
+                </Link>
+            </div>
         </div>
     );
 };

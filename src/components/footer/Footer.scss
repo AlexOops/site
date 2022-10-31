@@ -1,0 +1,21 @@
+@import "../../sassStyles/media_mixin";
+@import "../../sassStyles/variables";
+footer {
+  display: flex;
+  width: $content-width;
+  height: 64px;
+  background: #FFFFFF;
+  border-top: 1px solid #CAD1E1;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0;
+
+}
+.copyright {
+  color: #95A1BB;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}

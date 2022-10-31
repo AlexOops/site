@@ -1,18 +1,20 @@
 .header {
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &__tittle {
+    margin-bottom: 75px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 58px;
     line-height: 68px;
-    margin-bottom: 35px;
   }
 
   &__btn-wrp {
+    margin-top: 75px;
     width: 420px;
     display: flex;
     justify-content: space-between;

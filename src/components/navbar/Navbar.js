@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import * as svg from "../../images/svg_icons";
+import {NavHashLink} from "react-router-hash-link";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -23,14 +24,13 @@ const Navbar = () => {
                     <span className='nav-icon'></span>
                 </label>
                 <ul className='menu'>
-                    <li className={'menu-item'}><Link to={"#"} className={'menu-link menu-link--active'}>Обо мне</Link></li>
-                    <li className={'menu-item'}><Link to={"#"}  className={'menu-link'}>Контакты</Link></li>
-<<<<<<< HEAD
-                    <li className={'menu-item'}><Link to={"#"}  className={'menu-link'}>Бланки</Link></li>
-=======
-                    <li className={'menu-item'}><Link to={"/forms"}  className={'menu-link'}>Бланки</Link></li>
->>>>>>> 4182924 (added component form)
-                    <li className={'menu-item'}><Link to={"#"}  className={'menu-link'}>Протоколы</Link></li>
+                    <li className='menu__item'><Link to={"#"} className='menu__link menu__link--active'>Обо мне</Link></li>
+                    <li className='menu__item'><Link to={"#"} className='menu__link'>Контакты</Link></li>
+                    <li className='menu__item'><Link to={"/forms"} className='menu__link'>Бланки</Link></li>
+                    <li className='menu__item'><NavHashLink
+                        to={"/#paymentAnchorTag"} className='menu__link'
+                        scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                    >Протоколы</NavHashLink></li>
                 </ul>
             </div>
             <div className="social">

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 @import url(components/video/responsive-player.scss);
 @import url(components/header/header.scss);
 @import url(components/information/information.scss);
@@ -6,19 +7,19 @@
 @import url(components/questions/questions.scss);
 @import url(components/feedback/feedback.scss);
 @import url(components/navbar/Navbar.scss);
-
-/*forms page*/
+@import url(components/footer/Footer.scss);
 @import url(components/forms/forms.scss);
+@import url(components/protocols/protocols.scss);
 
 .App {
   font-family: 'Rubik', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 54px;
 
   .button {
-    box-sizing: border-box;
-    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
@@ -69,4 +70,9 @@
     font-size: 16px;
     line-height: 22px;
   }
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
