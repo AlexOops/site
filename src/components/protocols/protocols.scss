@@ -30,7 +30,11 @@
 
     &__link {
       color: #5e5f66;
+
       &:hover {
+        color: #6E38F7;
+      }
+      &:focus {
         color: #6E38F7;
       }
     }
@@ -52,22 +56,34 @@
     align-items: center;
 
     .description {
-      width: 500px;
-
-      &__list {
-        padding-left: 20px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-      }
+      width: 600px;
 
       &__title {
+        text-align: center;
         font-style: normal;
         font-weight: 500;
         font-size: 36px;
         line-height: 43px;
       }
+
+      &__subtitle {
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: #95A1BB;
+      }
+
+      &__text{
+        padding-left: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
+      }
+
 
       &__note {
         text-align: justify;

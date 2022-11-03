@@ -33,7 +33,7 @@ const Payment = () => {
                 <p className="payment__plan__text">Hypnosis Myth Reality Guidelines For Inkjet Cartridge Refill
                     Learn How To Motivate Yourself
                     Motivation In Life Start With A Baseline Yes You Can</p>
-                <Link to="/protocols">
+                <Link to="/protocols/1">
                     <button className="button">Купить сейчас</button>
                 </Link>
             </div>

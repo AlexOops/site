@@ -15,7 +15,7 @@ function App() {
             <Routes>
                 <Route index element={<HomePage/>}/>
                 <Route path="/forms" element={<FormsPage/>}/>
-                <Route path="/protocols" element={<ProtocolsPage/>}/>
+                <Route path="/protocols/:id" element={<ProtocolsPage/>}/>
             </Routes>
             </main>
             <Footer/>
