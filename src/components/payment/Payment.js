@@ -9,11 +9,11 @@ const Payment = () => {
                 <p className="payment__info__text">There are many reasons to get down and start to get depressed about
                     your situation. Learn how to
                     motivate yourself, yes you can!</p>
-                <a className="payment__info__contact" href="#">связаться со мной</a>
+                <Link className="payment__info__contact" >связаться со мной</Link>
             </div>
             <div className="payment__plan">
-                <img src="https://imgholder.ru/300x140/f2f3f4/ffff&text=standard&font=ffl" alt="#" width="300"
-                     height="140"/>
+                <img src="./images/standart.png" alt="#" width="100%"
+                     />
                 <h4 className="payment__plan__title">Стандарт</h4>
                 <p className="payment__plan__price">Бесплатно</p>
                 <div className="verticalLine"></div>
@@ -25,8 +25,8 @@ const Payment = () => {
                 </Link>
             </div>
             <div className="payment__plan">
-                <img src="https://imgholder.ru/300x140/f2f3f4/ffff&text=individual&font=ffl" alt="#" width="300"
-                     height="140"/>
+                <img src="./images/individual.png" alt="#" width="100%"
+                     />
                 <h4 className="payment__plan__title">Стандарт</h4>
                 <p className="payment__plan__price--active">1000 &#8381;</p>
                 <div className="verticalLine"></div>

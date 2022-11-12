@@ -10,6 +10,8 @@
 @import url(components/footer/Footer.scss);
 @import url(components/forms/forms.scss);
 @import url(components/protocols/protocols.scss);
+@import url(sassStyles/media_mixin.scss);
+
 
 .App {
   font-family: 'Rubik', sans-serif;
@@ -71,8 +73,16 @@
     line-height: 22px;
   }
 }
-
+@import "./sassStyles/media_mixin";
 main {
   display: flex;
   justify-content: center;
+  max-width: 940px;
+  margin: 0 auto;
+  @include _600 {
+    padding: 0 5px;
+  }
+  @include _970 {
+    padding: 0 5px;
+  }
 }

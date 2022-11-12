@@ -1,3 +1,5 @@
+@import "../../sassStyles/media_mixin";
+
 .feedback {
   margin: 120px 0;
   display: flex;
@@ -14,7 +16,7 @@
   }
 
   &__text {
-    width: 620px;
+    max-width: 620px;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -22,6 +24,7 @@
     line-height: 22px;
     color: #95A1BB;
     margin: 0 0 40px 0;
+
   }
 
   &__form {
@@ -31,6 +34,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include _600 {
+      width: 100%;
+    }
 
     &__name {
       width: 220px;

@@ -13,11 +13,16 @@ nav {
   left: 50%;
   top: 0;
   width:$content-width;
-  margin-left: -($content-width/2); /* Negative half of width. */
+  margin-left: calc(-1*($content-width/2)); /* Negative half of width. */
   z-index: 1;
   background-color: transparent;
   transition: box-shadow 0.8s ease-in-out;
   padding: 0 5px;
+  @include _970 {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
 }
 
 .nav--active {

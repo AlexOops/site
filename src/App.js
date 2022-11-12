@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import React from "react";
 import Footer from "./components/footer/Footer";
 import ProtocolsPage from "./pages/ProtocolsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route index element={<HomePage/>}/>
                 <Route path="/forms" element={<FormsPage/>}/>
                 <Route path="/protocols/:id" element={<ProtocolsPage/>}/>
+                <Route path={'*'} element={<NotFoundPage/>}/>
             </Routes>
             </main>
             <Footer/>

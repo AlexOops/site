@@ -31,14 +31,8 @@ const Protocols = () => {
                                     <h1 className="description__title">{item.title}</h1>
                                     <p className="description__subtitle">{item.subtitle}</p>
                                     <div className="description__text">
-                                        {
-                                            item.description.map((item) => {
-                                                return (
-                                                    <p>{item}</p>
-                                                )
-                                            })
-                                        }
-                                        <p className="description__note">{item.note}</p>
+                                        {item.description}
+
                                     </div>
                                 </div>
                             </div>

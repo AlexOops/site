@@ -1,6 +1,6 @@
 import React from 'react';
 import ResponsivePlayer from "../video/ResponsivePlayer";
-import {NavHashLink} from "react-router-hash-link";
+import { HashLink } from 'react-router-hash-link';
 import {Link} from "react-router-dom";
 
 const Header = () => {
@@ -11,10 +11,10 @@ const Header = () => {
             <ResponsivePlayer className={"player-header"} url="https://www.youtube.com/embed/D4MdHQOILdw"/>
 
             <div className="header__btn-wrp">
-                <NavHashLink
+                <HashLink
                     to={"/#paymentAnchorTag"} className='button'
-                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-                >Купить сейчас</NavHashLink>
+                     scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                >Купить сейчас</HashLink>
                 <Link to={"/forms"}>
                     <button className="button">Бесплатный контент</button>
                 </Link>

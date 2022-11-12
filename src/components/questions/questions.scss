@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 940px;
+  //width: 940px;
 
   &__title {
     margin-bottom: 40px;
@@ -11,6 +11,7 @@
 
   &__wrp:nth-child(n+1) {
     margin-bottom: 20px;
+    width: 100%;
 
     .question {
       display: flex;
@@ -18,7 +19,8 @@
       align-items: center;
       border: 1px solid #CAD1E1;
       border-radius: 5px;
-      width: 940px;
+      //width: 940px;
+      width: 100%;
 
       &__text {
         font-weight: 500;

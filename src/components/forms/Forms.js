@@ -17,34 +17,34 @@ const Forms = () => {
 
                 <ul className="forms__docs">
                     <li className="forms__docs__item">
-                        <a href="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
+                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
                             <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc1"/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="forms__docs__item">
-                        <a href="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
+                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
                             <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc2"/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="forms__docs__item">
-                        <a href="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
+                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
                             <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc3"/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="forms__docs__item">
-                        <a href="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
+                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
                             <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc4"/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="forms__docs__item">
-                        <a href="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
+                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
                             <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc5"/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="forms__docs__item">
-                        <a href="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
+                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
                             <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc6"/>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
