@@ -32,7 +32,6 @@ const Protocols = () => {
                                     <p className="description__subtitle">{item.subtitle}</p>
                                     <div className="description__text">
                                         {item.description}
-
                                     </div>
                                 </div>
                             </div>

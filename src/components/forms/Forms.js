@@ -1,53 +1,46 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React, {useRef, useState} from 'react';
+import {useSelector} from "react-redux";
+import {formsSelector} from "../../redux/reducers/formsReducer/formsSelector";
+import Modal from "../modal/Modal";
+import FormsPdf from "./FormsPdf";
 
 const Forms = () => {
-    return (
-        <div>
-            <div className="forms">
-                <div className="forms__context">
-                    <h1 className="forms__context__title">Бланки</h1>
-                    <ul className="forms__context__list">
-                        <li className="forms__context__item"><Link className="forms__context__link" to={"#"}>Все</Link></li>
-                        <li className="forms__context__item"><Link className="forms__context__link" to={"#"}>Категория 1</Link></li>
-                        <li className="forms__context__item"><Link className="forms__context__link" to={"#"}>Категория 2</Link></li>
-                        <li className="forms__context__item"><Link className="forms__context__link" to={"#"}>Категория 3</Link></li>
-                    </ul>
-                </div>
+    const formList = useSelector(formsSelector);
+    const [modalActive, setModalActive] = useState();
+    const id = useRef();
 
-                <ul className="forms__docs">
-                    <li className="forms__docs__item">
-                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
-                            <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc1"/>
-                        </Link>
-                    </li>
-                    <li className="forms__docs__item">
-                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
-                            <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc2"/>
-                        </Link>
-                    </li>
-                    <li className="forms__docs__item">
-                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
-                            <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc3"/>
-                        </Link>
-                    </li>
-                    <li className="forms__docs__item">
-                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
-                            <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc4"/>
-                        </Link>
-                    </li>
-                    <li className="forms__docs__item">
-                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
-                            <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc5"/>
-                        </Link>
-                    </li>
-                    <li className="forms__docs__item">
-                        <Link to="https://imgholder.ru/600x300/f2f3f4/adb9ca&text=Big+doc&font=kelson">
-                            <img src="https://imgholder.ru/220x180/f2f3f4/adb9ca&text=Document&font=kelson" alt="doc6"/>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+    let currentPdf = formList.filter((item) => {
+        return item.id === Number(id.current)
+    })
+
+    return (
+        <div className="forms-wrp">
+            {
+                formList.map((data) => {
+                        return (
+                            <div className="form" key={data.id}>
+                                <div className="form__item" onClick={() => {
+                                    setModalActive(true);
+                                    id.current = data.id
+                                }}>
+                                    <img className="form__item__img"
+                                         src="https://imgholder.ru/150x150/8493a8/adb9ca&text=PDF+MINI&font=kelson" alt=""/>
+                                    <p className="form__item__name">{data.name}</p>
+                                </div>
+                                <Modal active={modalActive} setActive={setModalActive}>
+                                    {
+                                        currentPdf.map((item) => {
+                                            return (
+                                                <FormsPdf key={item.id} text={item.text}/>
+                                            )
+                                        })
+                                    }
+                                </Modal>
+                            </div>
+                        )
+                    }
+                )
+            }
         </div>
     );
 };
